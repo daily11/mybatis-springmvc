@@ -45,4 +45,25 @@
     </filter-mapping>
 
 
+    <!--测试过滤器1-->
+    <filter>
+        <filter-name>helloFilter</filter-name>
+        <filter-class>com.filter.HelloFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>helloFilter</filter-name>
+        <url-pattern>/hello</url-pattern>
+    </filter-mapping>
+
+    <!--测试过滤器2-->
+    <filter>
+        <filter-name>secondFilter</filter-name>
+        <filter-class>com.filter.SecondFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>secondFilter</filter-name>
+        <url-pattern>/hello</url-pattern>
+    </filter-mapping>
+
+
 </web-app>
